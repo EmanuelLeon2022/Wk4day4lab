@@ -14,8 +14,6 @@ class Hamster {
       return this.price
     }
   }
-  const Gus = new Hamster("Gus")
-  console.log(Gus)
 
 class Person {
     constructor(name){
@@ -59,3 +57,27 @@ class Person {
       this.bankAccount-=hamster.getPrice()
     }
   }
+  const Timmy = new Person('Timmy')
+  for (let i = 0; i<5; i++){
+    Timmy.ageUp()
+  }
+  for (let i = 0; i < 5; i++){
+    Timmy.eat()
+  }
+  for (let i = 0; i < 5; i++){
+    Timmy.excercise()
+  }
+  for (let i = 0; i < 9; i++){
+    Timmy.ageUp()
+  }
+  const Gus = new Hamster('Gus')
+  Gus.owner ='Timmy'
+  Timmy.buyHamster(Gus)
+
+  for (let i = 0; i< 15; i++){
+    Timmy.ageUp()
+  }
+  Timmy.eat();
+  Timmy.eat();
+  Timmy.exercise();
+  Timmy.excercise();
